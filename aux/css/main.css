@@ -131,7 +131,7 @@ select {display: block; height: 6rem; padding: 1.5rem 0; border: 0; outline: non
 textarea {min-height: 25rem}
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, 
-input[type="password"]:focus, textarea:focus, select:focus {color: #cc005f; border-bottom: 1px solid #ffffff}
+input[type="password"]:focus, textarea:focus, select:focus {color: #FFFFFF; border-bottom: 1px solid #ffffff}
 label, legend {font-family: "poppins-bold", sans-serif; font-size: 1.4rem; margin-bottom: .6rem; color: #3b3b3b; display: block}
 input[type="checkbox"], input[type="radio"] {display: inline}
 label > .label-text {display: inline-block; margin-left: 1rem; font-family: "poppins-regular", sans-serif; line-height: inherit}
@@ -289,7 +289,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #cc005f;
+	color: #FFFFFF;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -336,7 +336,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #cc005f;
+	border-color: #FFFFFF;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -368,7 +368,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
+	color: #FFFFFF;
 }
 
 /**
@@ -812,7 +812,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #cc005f;
+	background: #FFFFFF;
 	border: none;
 }
 @media only screen and (max-width:600px) {
@@ -1203,7 +1203,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
+	background: #FFFFFF;
 }
 #message-warning, #message-success {
 	display: none;
@@ -1416,7 +1416,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #cc005f;
+	background: #FFFFFF;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
