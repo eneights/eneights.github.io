@@ -260,7 +260,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 .intro-content .button {color: #FFFFFF !important; border-color: rgba(255, 255, 255, 0.3); height: 6rem !important; line-height: 5.4rem !important; 
 						padding: 0 3.5rem 0 3rem !important; margin-top: .6rem; font-size: 1.3rem; text-transform: uppercase; letter-spacing: .25rem}
 .intro-content .button:hover, .intro-content .button:focus {border-color: #FFFFFF}
-.intro-content .button::after {display: inline-block; content: "\f107"; font-family: fontAwesome; font-size: 1.6rem; line-height: inherit; text-align: center; 
+.intro-content .button::after {display: inline-block; font-family: fontAwesome; font-size: 1.6rem; line-height: inherit; text-align: center; 
 							   position: relative;left: 1.2rem}
 .intro-social {display: block; position: absolute; width: 100%; left: 0; bottom: 7.2rem; font-size: 3.3rem; margin: 0; padding: 0}
 .intro-social li {display: inline-block; margin: 0 20px; padding: 0}
