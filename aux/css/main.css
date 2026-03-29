@@ -546,6 +546,10 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 .dark-info .collapse {padding: 0}
 .dark-info .icon {margin-bottom: 2.1rem}
 .dark-info .icon i {font-size: 4.2rem; color: #FFFFFF}
+.dark-info h1 {color: #ffffff}
+.dark-info h2 {color: #ffffff}
+.dark-info h3 {color: #ffffff}
+.dark-info h4 {color: #ffffff}
 .dark-info h5 {color: #ffffff}
 
 #contact {background: #151515; padding-top: 12rem; padding-bottom: 7.2rem}
