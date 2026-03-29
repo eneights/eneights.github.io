@@ -536,11 +536,11 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 
 #dark {background: #151515; padding-top: 12rem; padding-bottom: 7.2rem}
 #dark .section-intro h1 {color: white}
-#dark .section-intro .intro-info h2 {color: white}
-#dark .section-intro .intro-info h3 {color: white}
-#dark .section-intro .intro-info h4 {color: white}
-#dark .section-intro .intro-info h5 {color: #ffffff}
-#dark .section-intro .intro-info p {color: rgba(255, 255, 255, 0.7)}
+#dark .section-intro h2 {color: white}
+#dark .section-intro h3 {color: white}
+#dark .section-intro h4 {color: white}
+#dark .section-intro h5 {color: #ffffff}
+#dark .section-intro p {color: rgba(255, 255, 255, 0.7)}
 
 .dark-info {margin: 4.8rem auto 0; font-family: "poppins-regular", sans-serif; font-size: 1.5rem; text-align: center}
 .dark-info .collapse {padding: 0}
