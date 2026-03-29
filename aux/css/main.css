@@ -535,7 +535,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 }
 
 #dark {background: #151515; padding-top: 12rem; padding-bottom: 7.2rem}
-#dark .section-intro .intro-info h1 {color: white}
+#dark .section-intro h1 {color: white}
 #dark .section-intro .intro-info h2 {color: white}
 #dark .section-intro .intro-info h3 {color: white}
 #dark .section-intro .intro-info h4 {color: white}
