@@ -211,7 +211,7 @@ header {position: fixed; width: 100%; min-height: 66px; z-index: 600}
 header .row {position: relative; min-height: 66px}
 header .top-bar {display: block; background: transparent; min-width: 66px; min-height: 66px; position: absolute; left: 90px; top: 0}
 
-.menu-toggle {float: left; width: 40px; height: 40px; margin-left: 20px; margin-top: 13px; display: block; position: relative}
+.menu-toggle {float: left; width: 100px; height: 40px; margin-left: 20px; margin-top: 13px; display: block; position: relative}
 .menu-toggle span {display: block; background-color: #ffffff; width: 24px; height: 3px; margin-top: -1.5px; font: 0/0 a; text-shadow: none; color: #ffffff; 
 				   position: absolute; right: 8px; top: 50%; bottom: auto; left: auto; -moz-transition: background 0.2s ease-in-out; 
 				   -o-transition: background 0.2s ease-in-out; -webkit-transition: background 0.2s ease-in-out; -ms-transition: background 0.2s ease-in-out;
@@ -232,7 +232,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 .menu-toggle.is-clicked span::after {bottom: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg)}
 
 #main-nav-wrap {display: block; width: 100%; font-family: "poppins-medium", sans-serif; font-size: 1.5rem; position: absolute; top: 100%; left: 0}
-.main-navigation {background: #000000padding: 24px 30px 42px;Zmargin: 0; width: 100%; height: auto; clear: both; display: none}
+.main-navigation {background: #000000padding: 24px 30px 42px; Zmargin: 0; width: 100%; height: auto; clear: both; display: none}
 .main-navigation > li {display: block; height: auto; text-align: left; padding: 0}
 .main-navigation li a {display: block; color: #FFFFFF; width: auto; padding: 15px 0; line-height: 16px; border: none}
 .main-navigation li a:hover {color: #ffffff; padding-left: 1rem}
