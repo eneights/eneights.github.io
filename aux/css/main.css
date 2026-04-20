@@ -15,10 +15,10 @@ a, a:visited {color: #000000; -moz-transition: all 0.3s ease-in-out; -o-transiti
 			  -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
 a:hover, a:focus, a:active {color: #ffffff; outline: 0}
 
-h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {font-family: "poppins-semibold", sans-serif; color: #313131; font-style: normal; 
+h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {font-family: "lora-bold", serif; color: #313131; font-style: normal; 
 															text-rendering: optimizeLegibility;margin-bottom: 2.1rem} 
 h3, .h03, h4, .h04 {margin-bottom: 1.8rem}
-h5, .h05, h6, .h06 {font-family: "poppins-bold"; margin-bottom: 1.2rem}
+h5, .h05, h6, .h06 {font-family: "lora-bold"; margin-bottom: 1.2rem}
 h1, .h01 {font-size: 3.1rem; line-height: 1.355; letter-spacing: -.1rem}
 
 @media only screen and (max-width:600px) {h1, .h01 {font-size: 2.6rem; letter-spacing: -.07rem}}
@@ -41,7 +41,7 @@ strong, b {font-family: "lora-bold", serif}
 
 small {font-size: 1.2rem; line-height: inherit}
 
-abbr {font-family: "poppins-bold", serif; font-variant: small-caps; text-transform: lowercase; letter-spacing: .05rem; color: #888888}
+abbr {font-family: "lora-bold", serif; font-variant: small-caps; text-transform: lowercase; letter-spacing: .05rem; color: #888888}
 
 var, kbd, samp, code, pre {font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace}
 
@@ -72,10 +72,10 @@ ul.disc li::before {content: ""; display: inline-block; width: 8px; height: 8px;
 dt {margin: 0; color: #ffffff}
 dd {margin: 0 0 0 2rem}
 
-table {border-width: 0; width: 100%; max-width: 100%; font-family: "lora-regular", sans-serif}
+table {border-width: 0; width: 100%; max-width: 100%; font-family: "lora-regular", serif}
 
 th, td {padding: 1.5rem 3rem; text-align: left; border-bottom: 1px solid #E8E8E8}
-th {color: #313131; font-family: "poppins-bold", sans-serif}
+th {color: #313131; font-family: "lora-bold", serif}
 td {line-height: 1.5}
 th:first-child, td:first-child {padding-left: 0}
 th:last-child, td:last-child {padding-right: 0}
@@ -115,7 +115,7 @@ img.pull-left {margin: .9rem 2.4rem 0 0}
 fieldset {border: none}
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, 
-select {display: block; height: 6rem; padding: 1.5rem 0; border: 0; outline: none; vertical-align: middle; color: #313131; font-family: "poppins-regular", sans-serif;
+select {display: block; height: 6rem; padding: 1.5rem 0; border: 0; outline: none; vertical-align: middle; color: #313131; font-family: "lora-regular", serif;
 		font-size: 1.5rem; line-height: 3rem; max-width: 100%; background: transparent; border-bottom: 1px solid rgba(0, 0, 0, 0.3); -moz-transition: all 0.3s ease-in-out; 
 		-o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
 
@@ -132,9 +132,9 @@ textarea {min-height: 25rem}
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, 
 input[type="password"]:focus, textarea:focus, select:focus {color: #FFFFFF; border-bottom: 1px solid #ffffff}
-label, legend {font-family: "poppins-bold", sans-serif; font-size: 1.4rem; margin-bottom: .6rem; color: #3b3b3b; display: block}
+label, legend {font-family: "lora-bold", serif; font-size: 1.4rem; margin-bottom: .6rem; color: #3b3b3b; display: block}
 input[type="checkbox"], input[type="radio"] {display: inline}
-label > .label-text {display: inline-block; margin-left: 1rem; font-family: "poppins-regular", sans-serif; line-height: inherit}
+label > .label-text {display: inline-block; margin-left: 1rem; font-family: "lora-regular", serif; line-height: inherit}
 label > input[type="checkbox"], label > input[type="radio"] {margin: 0; position: relative; top: .15rem}
 
 ::-webkit-input-placeholder {color: #a1a1a1}
@@ -144,7 +144,7 @@ label > input[type="checkbox"], label > input[type="radio"] {margin: 0; position
 
 .placeholder {color: #a1a1a1 !important}
 
-.button, a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {display: inline-block; font-family: "poppins-bold", sans-serif; 
+.button, a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {display: inline-block; font-family: "lora-bold", serif; 
 																							font-size: 1.4rem; text-transform: uppercase; letter-spacing: .3rem; 
 																							height: 5.4rem; line-height: 5.4rem; padding: 0 3rem; margin: 0 .3rem 1.2rem 0;
 																							background: #d8d8d8; color: #313131; text-decoration: none; cursor: pointer;
@@ -169,7 +169,7 @@ button.stroke.large, .button.stroke.large {line-height: 5.4rem !important}
 button.stroke:hover, .button.stroke:hover {border: 3px solid #ffffff; color: #ffffff}
 button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
 
-.alert-box {padding: 2.1rem 4rem 2.1rem 3rem; position: relative; margin-bottom: 3rem; border-radius: 3px; font-family: "poppins-regular", sans-serif; font-size: 1.5rem}
+.alert-box {padding: 2.1rem 4rem 2.1rem 3rem; position: relative; margin-bottom: 3rem; border-radius: 3px; font-family: "lora-regular", serif; font-size: 1.5rem}
 .alert-box .close {position: absolute; right: 1.8rem; top: 1.8rem; cursor: pointer}
 
 .ss-error {background-color: #ffd1d2; color: #e65153}
@@ -177,7 +177,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
 .ss-info {background-color: #d7ecfb; color: #4a95cc}
 .ss-notice {background-color: #fff099; color: #bba31b}
 
-.drop-cap:first-letter {float: left; margin: 0; padding: 1.5rem .6rem 0 0; font-size: 8.4rem; font-family: "poppins-bold", sans-serif; line-height: 6rem; text-indent: 0;
+.drop-cap:first-letter {float: left; margin: 0; padding: 1.5rem .6rem 0 0; font-size: 8.4rem; font-family: "lora-bold", serif; line-height: 6rem; text-indent: 0;
 						background: transparent;color: #313131}
 
 .lining dt, .lining dd {display: inline; margin: 0}
@@ -192,7 +192,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
 .dictionary-style dd:before {content: counter(definitions, decimal) ". "}
 
 .pull-quote {position: relative; padding: 2.1rem 3rem 2.1rem 0px}
-.pull-quote:before, .pull-quote:after {height: 1em; position: absolute; font-size: 8rem; font-family: Arial, Sans-Serif; color: #333}
+.pull-quote:before, .pull-quote:after {height: 1em; position: absolute; font-size: 8rem; font-family: Arial, serif; color: #333}
 .pull-quote:before {content: "\201C"; top: 33px; left: 0}
 .pull-quote:after {content: '\201D'; bottom: -33px; right: 0}
 
@@ -200,7 +200,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
 .grey-section p.lead {color: #7d7d7d}
 
 .section-intro {max-width: 900px; margin-left: auto; margin-right: auto; text-align: center; margin-bottom: 3.6rem; position: relative}
-.section-intro h1 {font-family: "poppins-semibold", serif; font-size: 3.6rem; color: #313131; line-height: 1.25; margin-bottom: 1.2rem}
+.section-intro h1 {font-family: "lora-bold", serif; font-size: 3.6rem; color: #313131; line-height: 1.25; margin-bottom: 1.2rem}
 .section-intro h5 {color: #ffffff; font-size: 1.6rem; line-height: 1.875; margin-bottom: 0.3rem; letter-spacing: .4rem}
 
 @media only screen and (max-width:768px) {.section-intro {max-width: 650px} .section-intro h1 {font-size: 3rem}}
@@ -230,7 +230,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 .menu-toggle.is-clicked span::before {top: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg)}
 .menu-toggle.is-clicked span::after {bottom: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg)}
 
-#main-nav-wrap {display: block; width: 100%; font-family: "poppins-medium", sans-serif; font-size: 1.5rem; position: absolute; top: 100%; left: 20px}
+#main-nav-wrap {display: block; width: 100%; font-family: "lora-regular", serif; font-size: 1.5rem; position: absolute; top: 100%; left: 20px}
 .main-navigation {background: #000000padding: 24px 30px 42px; Zmargin: 0; width: 100%; height: auto; clear: both; display: none}
 .main-navigation > li {display: block; height: auto; text-align: left; padding: 0}
 .main-navigation li a {display: block; color: #FFFFFF; width: auto; padding: 15px 0; line-height: 16px; border: none}
@@ -247,9 +247,9 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 .intro-overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #111111; opacity: .85}
 .intro-content {display: table-cell; vertical-align: middle; text-align: center; -webkit-transform: translateY(-2.1rem); -ms-transform: translateY(-2.1rem); 
 				transform: translateY(-2.1rem)}
-.intro-content h1 {color: #FFFFFF; font-family: "poppins-medium", sans-serif; font-size: 8.4rem; line-height: 1.071; max-width: 900px; margin-top: 0; margin-bottom: .6rem;
+.intro-content h1 {color: #FFFFFF; font-family: "lora-regular", serif; font-size: 8.4rem; line-height: 1.071; max-width: 900px; margin-top: 0; margin-bottom: .6rem;
 				   margin-left: auto; margin-right: auto; text-shadow: 0 0 20px rgba(0, 0, 0, 0.5)}
-.intro-content h5 {color: #FFFFFF; font-family: "poppins-bold", sans-serif; font-size: 2.3rem; line-height: 1.565; margin-bottom: 0; text-transform: uppercase; 
+.intro-content h5 {color: #FFFFFF; font-family: "lora-bold", serif; font-size: 2.3rem; line-height: 1.565; margin-bottom: 0; text-transform: uppercase; 
 				   letter-spacing: .3rem; text-shadow: 0 0 6px rgba(0, 0, 0, 0.2)}
 .intro-content .intro-position {font-family: "lora-regular", serif; font-size: 1.7rem; line-height: 2.4rem; text-transform: uppercase; letter-spacing: .2rem; 
 								color: #FFFFFF; text-shadow: 0 0 6px rgba(0, 0, 0, 0.2)}
@@ -283,12 +283,12 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 .intro-info .lead {text-align: justify; padding-left: 0rem; color: black}
 
 .about-content {position: relative; text-align: left; max-width: 850px; margin-bottom: 3.6rem}
-.about-content h3 {font-family: "poppins-bold", sans-serif; font-size: 1.8rem; text-transform: uppercase; letter-spacing: .25rem}
+.about-content h3 {font-family: "lora-bold", serif; font-size: 1.8rem; text-transform: uppercase; letter-spacing: .25rem}
 .about-content .info-list {list-style: none; margin-left: 0}
 .about-content .info-list li {padding: 0 0 1.5rem 0; margin-bottom: .6rem}
-.about-content .info-list li strong {font-family: "poppins-bold", sans-serif; color: #313131; text-transform: uppercase; letter-spacing: .2rem; font-size: 1.5rem; 
+.about-content .info-list li strong {font-family: "lora-bold", serif; color: #313131; text-transform: uppercase; letter-spacing: .2rem; font-size: 1.5rem; 
 									 line-height: 3rem}
-.about-content .info-list li span {display: block; font-family: "poppins-regular", sans-serif; color: #888888; font-size: 1.5rem; line-height: 1}
+.about-content .info-list li span {display: block; font-family: "lora-regular", serif; color: #888888; font-size: 1.5rem; line-height: 1}
 
 .button-section {text-align: center}
 .button-section .button {width: 250px}
@@ -315,7 +315,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 #resume .timeline-ico i {position: relative; left: .05rem; top: .2rem}
 #resume .timeline-header {float: left; width: 35%; padding-right: 90px; text-align: right}
 #resume .timeline-header h3 {margin-bottom: 0}
-#resume .timeline-header p {font-family: "poppins-regular", sans-serif; font-size: 1.6rem; color: #888888}
+#resume .timeline-header p {font-family: "lora-regular", serif; font-size: 1.6rem; color: #888888}
 #resume .timeline-content {margin-left: 35%; padding-left: 60px}
 #resume .timeline-content h4 {position: relative; padding-bottom: 1.8rem}
 #resume .timeline-content h4::after {content: ""; display: block; height: 3px; width: 50px; background: rgba(0, 0, 0, 0.2); position: absolute; left: 0; bottom: 0}
@@ -348,19 +348,19 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 	padding: 1.8rem 3.6rem 3rem;
 }
 .popup-modal .description-box h4 {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "lora-bold", serif;
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 	margin-bottom: .6rem;
 }
 .popup-modal .description-box p {
-	font-family: "poppins-regular", sans-serif;
+	font-family: "lora-regular", serif;
 	font-size: 1.4rem;
 	line-height: 2.4rem;
 	margin-bottom: 12px;
 }
 .popup-modal .categories {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "lora-bold", serif;
 	font-size: 1.1rem;
 	line-height: 1.8rem;
 	text-transform: uppercase;
@@ -375,7 +375,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 	background: #000000;
 }
 .popup-modal .link-box a {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "lora-bold", serif;
 	font-size: 1.2rem;
 	line-height: 6rem;
 	color: #FFFFFF;
@@ -541,7 +541,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 #dark .section-intro h5 {color: #ffffff}
 #dark .section-intro p {color: rgba(255, 255, 255, 0.7)}
 
-.dark-info {margin: 4.8rem auto 0; font-family: "poppins-regular", sans-serif; font-size: 1.5rem; text-align: center}
+.dark-info {margin: 4.8rem auto 0; font-family: "lora-regular", serif; font-size: 1.5rem; text-align: center}
 .dark-info .collapse {padding: 0}
 .dark-info .icon {margin-bottom: 2.1rem}
 .dark-info .icon i {font-size: 4.2rem; color: #FFFFFF}
@@ -556,7 +556,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 #contact .section-intro h5 {color: #ffffff}
 #contact .section-intro p {color: rgba(255, 255, 255, 0.7)}
 
-.contact-info {margin: 4.8rem auto 0; font-family: "poppins-regular", sans-serif; font-size: 1.5rem; text-align: center}
+.contact-info {margin: 4.8rem auto 0; font-family: "lora-regular", serif; font-size: 1.5rem; text-align: center}
 .contact-info .collapse {padding: 0}
 .contact-info .icon {margin-bottom: 2.1rem}
 .contact-info .icon i {font-size: 4.2rem; color: #FFFFFF}
@@ -616,7 +616,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 footer {
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
+	font-family: "lora-regular", serif;
 }
 footer a, footer a:visited {
 	color: #FFFFFF;
