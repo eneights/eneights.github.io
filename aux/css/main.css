@@ -293,7 +293,7 @@ header .top-bar {display: block; background: transparent; min-width: 50px; min-h
 #about .section-intro {margin-bottom: 1.5rem}
 
 .intro-info {margin-top: 2rem; margin-right: 0px; margin-left: 0px}
-.intro-info img {width: 30rem; height: auto; border-radius: 100%; margin: 0 auto; float: right; margin: 0 30px 15px 0}
+.intro-info img {width: 30rem; height: auto; border-radius: 100%; margin: 0 auto; float: right; margin: 0 30px 15px 30px}
 .intro-info .lead {text-align: justify; padding-left: 0rem; color: black}
 
 .section-intro h1, .section-intro h2, .section-intro h3, .section-intro h4, .section-intro h5, .section-intro h6, .section-intro p {margin-left: 0; padding-left: 0; 
