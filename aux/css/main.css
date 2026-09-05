@@ -207,9 +207,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
 @media only screen and (max-width:600px) {.section-intro h1 {font-size: 2.6rem} .section-intro h5 {font-size: 1.5rem; letter-spacing: .3rem}}
 @media only screen and (max-width:400px) {.section-intro h1 {font-size: 2.4rem}}
 
-header {position: fixed; width: 100%; min-height: 66px; z-index: 600}
-header .row {position: relative; min-height: 66px}
-header .top-bar {display: block; background: transparent; min-width: 66px; min-height: 66px; position: absolute; left: 90px; top: 0}
+header {position: fixed; width: 100%; min-height: 50px; z-index: 600, background: #ffffff}
+header .row {position: relative; min-height: 50px}
+header .top-bar {display: block; background: transparent; min-width: 50px; min-height: 50px; position: absolute; left: 90px; top: 0}
 
 /* 
 .menu-toggle {float: left; width: 200px; height: 40px; margin-left: 20px; margin-top: 13px; display: block; position: relative}
@@ -240,7 +240,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 
 .menu-toggle {display: none}
 
-#main-nav-wrap {display: block; width: auto; font-family: "inter-regular", sans-serif; font-size: 2rem; position: static; margin-top: 10px}
+#main-nav-wrap {display: block; width: auto; font-family: "inter-regular", sans-serif; font-size: 2rem; position: static; margin-top: 10px, background: #ffffff}
 
 .main-navigation {background: transparent; padding: 0; margin: 0; width: auto; height: auto; display: flex; flex-direction: row; align-items: center; 
 				  gap: 30px; list-style: none}
@@ -671,7 +671,7 @@ footer .copyright span:last-child::after {
 }
 
 footer .copyright {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width:768px) {
