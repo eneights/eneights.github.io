@@ -211,6 +211,7 @@ header {position: fixed; width: 100%; min-height: 66px; z-index: 600}
 header .row {position: relative; min-height: 66px}
 header .top-bar {display: block; background: transparent; min-width: 66px; min-height: 66px; position: absolute; left: 90px; top: 0}
 
+/* 
 .menu-toggle {float: left; width: 200px; height: 40px; margin-left: 20px; margin-top: 13px; display: block; position: relative}
 .menu-toggle span {display: block; background-color: #ffffff; width: 24px; height: 3px; margin-top: -1.5px; font: 0/0 a; text-shadow: none; color: #ffffff; 
 				   position: absolute; left: 10px; top: 50%; bottom: auto; -moz-transition: background 0.2s ease-in-out; -o-transition: background 0.2s ease-in-out; 
@@ -231,11 +232,21 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 .menu-toggle.is-clicked span::after {bottom: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg)}
 
 #main-nav-wrap {display: block; width: 100%; font-family: "inter-regular", serif; font-size: 1.5rem; position: absolute; top: 100%; left: 20px}
-.main-navigation {background: #000000padding: 24px 30px 42px; Zmargin: 0; width: 100%; height: auto; clear: both; display: none}
+.main-navigation {background: #000000; padding: 24px 30px 42px; Zmargin: 0; width: 100%; height: auto; clear: both; display: none}
 .main-navigation > li {display: block; height: auto; text-align: left; padding: 0}
 .main-navigation li a {display: block; color: #FFFFFF; width: auto; padding: 15px 0; line-height: 16px; border: none}
 .main-navigation li a:hover {color: #ffffff; padding-left: 1rem}
-.main-navigation li.current > a {background: none; color: #ffffff}
+.main-navigation li.current > a {background: none; color: #ffffff}	*/
+
+.menu-toggle {display: none}
+
+#main-nav-wrap {display: block; width: auto; font-family: "inter-regular", sans-serif; font-size: 1.5rem; position: static}
+
+.main-navigation {background: transparent; padding: 0; margin: 0; width: auto; height: auto; display: flex; flex-direction: row; align-items: center; 
+				  gap: 30px; list-style: none}
+.main-navigation > li {display: block; height: auto; text-align: left; padding: 0}
+.main-navigation li a {display: block; color: #FFFFFF; width: auto; padding: 10px 0; line-height: 16px; border: none}
+.main-navigation li a:hover {color: #ffffff; padding-left: 0}
 
 @media only screen and (max-width:1024px) {header .top-bar {left: 60px}}
 @media only screen and (max-width:768px) {header .top-bar {left: 50px}}
@@ -709,16 +720,3 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
-
-.menu-toggle {display: none !important}
-#main-nav-wrap {display: block !important}
-.main-navigation {display: flex !important; 
-				  flex-direction: row;
-				  align-items: center;
-				  gap: 30px;
-				  margin: 0;
-				  padding: 0;
-				  list-style: none}
-.main-navigation li {display: block;
-					 margin: 0;
-					 padding: 0}
