@@ -296,6 +296,9 @@ header .top-bar {display: block; background: transparent; min-width: 50px; min-h
 .intro-info img {width: 40rem; height: auto; border-radius: 100%; margin: 0 auto; float: left; margin: 0 30px 15px 0}
 .intro-info .lead {text-align: justify; padding-left: 0rem; color: black}
 
+.section-intro h1, .section-intro h2, .section-intro h3, .section-intro h4, .section-intro h5, .section-intro h6, .section-intro p {margin-left: 0; padding-left: 0; 
+																																	text-align: left}
+
 .about-content {position: relative; text-align: left; max-width: 850px; margin-bottom: 3.6rem}
 .about-content h3 {font-family: "inter-semibold", sans-serif; font-size: 2.3rem; text-transform: uppercase; letter-spacing: .25rem}
 .about-content .info-list {list-style: none; margin-left: 0}
