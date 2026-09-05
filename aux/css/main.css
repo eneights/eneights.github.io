@@ -709,3 +709,16 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
+
+.menu-toggle {display: none !important}
+#main-nav-wrap {display: block !important}
+.main-navigation {display: flex !important; 
+				  flex-direction: row;
+				  align-items: center;
+				  gap: 30px;
+				  margin: 0;
+				  padding: 0;
+				  list-style: none}
+.main-navigation li {display: block;
+					 margin: 0;
+					 padding: 0}
