@@ -240,7 +240,7 @@ header .top-bar {display: block; background: transparent; min-width: 66px; min-h
 
 .menu-toggle {display: none}
 
-#main-nav-wrap {display: block; width: auto; font-family: "inter-regular", sans-serif; font-size: 2rem; position: static}
+#main-nav-wrap {display: block; width: auto; font-family: "inter-regular", sans-serif; font-size: 2rem; position: static; margin-top: 10px}
 
 .main-navigation {background: transparent; padding: 0; margin: 0; width: auto; height: auto; display: flex; flex-direction: row; align-items: center; 
 				  gap: 30px; list-style: none}
