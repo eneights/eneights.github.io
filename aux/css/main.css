@@ -732,3 +732,34 @@ footer .copyright {
 }
 
 #about h3, #about .lead {margin-left: 0; padding-left: 0}
+
+.research-media {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.research-text {
+    flex: 1;
+}
+
+.research-video {
+    flex: 0 0 45%;
+}
+
+.research-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .research-media {
+        flex-direction: column;
+    }
+
+    .research-video {
+        width: 100%;
+    }
+}
