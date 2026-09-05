@@ -204,7 +204,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
 .section-intro h5 {color: #ffffff; font-size: 1.6rem; line-height: 1.875; margin-bottom: 0.3rem; letter-spacing: .4rem}
 
 @media only screen and (max-width:768px) {.section-intro {max-width: 650px} .section-intro h1 {font-size: 3rem}}
-@media only screen and (max-width:600px) {.section-intro h1 {font-size: 2.6rem} .section-intro h5 {font-size: 1.5rem; letter-spacing: .3rem}}
+@media only screen and (max-width:600px) {.section-intro h1 {font-size: 2.6rem} .section-intro h3 {font-size: 1.5rem; letter-spacing: .3rem}}
 @media only screen and (max-width:400px) {.section-intro h1 {font-size: 2.4rem}}
 
 header {position: fixed; width: 100%; min-height: 50px; z-index: 600; background: #ffffff}
