@@ -481,3 +481,6 @@ body {padding-top: 84px}
 .about-image {width: 30rem; height: auto; border-radius: 100%; float: right; margin: 0 30px 15px 30px}
 
 @media only screen and (max-width:600px) {.about-image {float: none; display: block; margin: 3rem auto 2rem}}
+
+header {position: fixed; width: 100%; background: #ffffff; z-index: 600}
+header .row {width: 100%; max-width: none; padding-left: 20px; padding-right: 20px; margin: 0; position: relative; min-height: 94px; display: flex; align-items: center}
