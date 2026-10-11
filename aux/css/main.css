@@ -468,7 +468,7 @@ footer .copyright {font-size: 1.7rem}
 
 @media only screen and (max-width: 768px) {.research-media {flex-direction: column} .research-video {width: 100%}}
 
-@media screen and (min-width: 1025px) {.row {max-width: 1300px}
+@media screen and (min-width: 1025px) {.row {max-width: 1300px}}
 @media screen and (min-width: 1025px) {.section-intro {max-width: 1300px} .intro-content h1 {max-width: 1300px} .about-content {max-width: 1300px}}
 
 header .top-bar {position: static; display: flex; align-items: center; gap: 30px; margin-left: 20px; margin-top: 30px} .logo {order: 1}
