@@ -479,6 +479,5 @@ header .top-bar {position: static; display: flex; align-items: center; gap: 30px
 body {padding-top: 120px}
 
 .about-image {width: 30rem; height: auto; border-radius: 100%; float: right; margin: 0 30px 15px 30px}
-.intro-info {margin-top: -64px; margin-right: 0; margin-left: 0}
 
-@media only screen and (max-width:600px) {.about-image {float: none; display: block; margin: 3rem auto 2rem}  .intro-info {margin-top: 0; text-align: center}}
+@media only screen and (max-width:600px) {.about-image {float: none; display: block; margin: 3rem auto 2rem}}
