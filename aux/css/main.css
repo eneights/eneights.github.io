@@ -472,6 +472,8 @@ footer .copyright {font-size: 1.7rem}
 @media screen and (min-width: 1025px) {.section-intro {max-width: 1300px} .intro-content h1 {max-width: 1300px} .about-content {max-width: 1300px}}
 
 header .top-bar {position: static; display: flex; align-items: center; gap: 30px; margin-left: 20px; margin-top: 30px} .logo {order: 1}
+header {position: fixed; width: 100%; background: #ffffff; z-index: 600}
+header .row {width: 100%; max-width: none; padding-left: 20px; padding-right: 20px; margin: 0; position: relative; min-height: 94px; display: flex; align-items: center}
 
 #main-nav-wrap {order: 2}
 .main-navigation {display: flex; flex-direction: row; gap: 30px; list-style: none; margin: 0; padding: 0}
@@ -482,5 +484,8 @@ body {padding-top: 84px}
 
 @media only screen and (max-width:600px) {.about-image {float: none; display: block; margin: 3rem auto 2rem}}
 
-header {position: fixed; width: 100%; background: #ffffff; z-index: 600}
-header .row {width: 100%; max-width: none; padding-left: 20px; padding-right: 20px; margin: 0; position: relative; min-height: 94px; display: flex; align-items: center}
+@media screen and (max-width:1024px) {header .row {width: 100%; max-width: none; padding: 18px; margin: 0}}
+@media screen and (max-width:768px) {header .row {width: 100%; max-width: none; padding-left: 0; padding-right: 0; margin: 0}
+									 header .top-bar {margin-left: 0; margin-right: 0; padding-left: 15px; padding-right: 15px}}
+@media screen and (max-width:600px) {header .row {width: 100%; max-width: none; padding-left: 0; padding-right: 0}}
+@media screen and (max-width:400px) {header .row {width: 100%; max-width: none; padding-left: 0; padding-right: 0}}
