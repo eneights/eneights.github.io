@@ -476,7 +476,7 @@ header .top-bar {position: static; display: flex; align-items: center; gap: 30px
 #main-nav-wrap {order: 2}
 .main-navigation {display: flex; flex-direction: row; gap: 30px; list-style: none; margin: 0; padding: 0}
 
-body {padding-top: 120px}
+body {padding-top: 84px}
 
 .about-image {width: 30rem; height: auto; border-radius: 100%; float: right; margin: 0 30px 15px 30px}
 
