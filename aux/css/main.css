@@ -482,7 +482,7 @@ body {padding-top: 84px}
 
 .about-image {width: 30rem; height: auto; border-radius: 100%; float: right; margin: 0 30px 15px 30px}
 
-@media only screen and (max-width:600px) {.about-image {float: none; display: block; margin: 3rem auto 2rem}}
+@media only screen and (max-width:600px) {.about-image {float: none; display: block; border-radius: 100%; margin: 3rem auto 2rem}}
 
 @media screen and (max-width:1024px) {header .row {width: 100%; max-width: none; padding: 18px; margin: 0}}
 @media screen and (max-width:768px) {header .row {width: 100%; max-width: none; padding-left: 0; padding-right: 0; margin: 0}
