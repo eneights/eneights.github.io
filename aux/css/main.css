@@ -501,12 +501,16 @@ header {position: fixed; top: 0; left: 0; right: 0; width: 100%; box-sizing: bor
 @media screen and (max-width: 768px) {header .row {box-sizing: border-box; padding-left: 15px; padding-right: 15px} 
 									  header .top-bar {margin-left: 0; padding-left: 0; transform: none}}
 
-footer .row .footer-row {width: 100%; max-width: 1300px; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; box-sizing: border-box; display: flex;
-						justify-content: space-between; align-items: center}
-footer .footer-row > .col-six {width: auto; float: none; padding: 0; margin: 0}
-footer .copyright {text-align: left}
+footer {padding-bottom: 2rem; font-size: 1.4rem; font-family: "inter-regular", sans-serif}
+footer .row {max-width: 1300px}
 footer .social {text-align: right}
-footer .footer-social {margin: 0}
+footer .footer-social {display: inline-block; font-size: 4rem; margin: 0; padding: 0; position: relative; top: -.3rem}
+footer .footer-social li {display: inline-block; margin: 0 12px; padding: 0}
+footer .footer-social li a {color: #FFFFFF}
+footer .copyright {font-size: 1.7rem; text-align: left}
+footer .copyright span {display: inline-block}
+footer .copyright span::after {content: "|"; display: inline-block; padding: 0 1rem 0 1.2rem; color: rgba(255, 255, 255, 0.1)}
+footer .copyright span:last-child::after {display: none}
 
-@media screen and (max-width: 768px) {footer .row.footer-row {flex-direction: column-reverse; gap: 1rem} footer .footer-row > .col-six {width: 100%} 
-									  footer .copyright, footer .social {text-align: center}}
+@media only screen and (max-width: 768px) {footer {text-align: center} footer .social {display: block; width: 100%; text-align: center; margin-bottom: 1.5rem}
+										   footer .copyright span {display: block} footer .copyright span::after {display: none}}
