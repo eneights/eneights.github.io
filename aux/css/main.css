@@ -500,3 +500,12 @@ header {position: fixed; top: 0; left: 0; right: 0; width: 100%; box-sizing: bor
 									   header .top-bar {margin-left: 0; padding-left: 0; transform: none}}
 @media screen and (max-width: 768px) {header .row {box-sizing: border-box; padding-left: 15px; padding-right: 15px} 
 									  header .top-bar {margin-left: 0; padding-left: 0; transform: none}}
+
+footer .footer-row {display: flex; justify-content: space-between; align-items: center}
+footer .footer-row .col-six {width: auto; float: none}
+footer .copyright {text-align: left}
+footer .social {text-align: right}
+footer .footer-social {margin: 0}
+
+@media only screen and (max-width: 768px) {footer .footer-row {flex-direction: column-reverse; gap: 1rem} footer .footer-row .col-six {width: 100%} footer .social 
+										   footer .copyright {text-align: center}}
