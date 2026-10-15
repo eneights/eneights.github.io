@@ -501,13 +501,12 @@ header {position: fixed; top: 0; left: 0; right: 0; width: 100%; box-sizing: bor
 @media screen and (max-width: 768px) {header .row {box-sizing: border-box; padding-left: 15px; padding-right: 15px} 
 									  header .top-bar {margin-left: 0; padding-left: 0; transform: none}}
 
-footer .row {max-width: 1300px; width: 100%; box-sizing: border-box; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0}
-footer .footer-row {display: flex; justify-content: space-between; align-items: center}
-footer .footer-row .col-six {width: auto; float: none; padding: 0;}
+footer .row .footer-row {width: 100%; max-width: 1300px; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; box-sizing: border-box; display: flex;
+						justify-content: space-between; align-items: center}
+footer .footer-row > .col-six {width: auto; float: none; padding: 0; margin: 0}
 footer .copyright {text-align: left}
 footer .social {text-align: right}
 footer .footer-social {margin: 0}
 
-@media only screen and (max-width: 768px) {footer .footer-row {flex-direction: column-reverse; gap: 1rem} footer .footer-row .col-six {width: 100%} 
-										   footer .social, footer .copyright {text-align: center}}
-@media only screen and (max-width: 1300px) {footer .row {padding-left: 20px; padding-right: 20px}}
+@media screen and (max-width: 768px) {footer .row.footer-row {flex-direction: column-reverse; gap: 1rem} footer .footer-row > .col-six {width: 100%} 
+									  footer .copyright, footer .social {text-align: center}}
