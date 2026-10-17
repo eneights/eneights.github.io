@@ -513,4 +513,4 @@ footer .copyright span::after {content: "|"; display: inline-block; padding: 0 1
 footer .copyright span:last-child::after {display: none}
 
 @media only screen and (max-width: 768px) {footer {text-align: center} footer .social {display: block; width: 100%; text-align: center; margin-bottom: 1.5rem}
-										   footer .copyright span {display: block} footer .copyright span::after {display: none}}
+										   footer .copyright {text-align: center} footer .copyright span {display: block} footer .copyright span::after {display: none}}
