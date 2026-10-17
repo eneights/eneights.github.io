@@ -14,6 +14,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 /* makes the font 33% larger relative to the icon container */
+.fa-orcid:before {
+  content: "\f8d2";
+}
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
