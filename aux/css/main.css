@@ -483,7 +483,6 @@ footer .footer-social li a {color: #FFFFFF}
 footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
 footer .copyright span {display: inline-block}
 footer .copyright span:last-child::after {display: none}
-footer .row:last-of-type {display: flex; align-items: center; gap: 1rem}
 
 @media only screen and (max-width: 768px) {footer {text-align: center; padding-top: 2rem; padding-bottom: 2rem} 
 										   footer .social {display: block; width: 100%; text-align: center; margin-bottom: 1.5rem}
