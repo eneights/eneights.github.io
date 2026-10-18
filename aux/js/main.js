@@ -11,22 +11,8 @@
 
 	/*---------------------------------------------------- */
 	/* Preloader
-	------------------------------------------------------ */ 
-   /*$(window).load(function() {
-
-      // will first fade out the loading animation 
-    	$("#loader").fadeOut("slow", function(){
-
-        // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
-
-      });       
-
-  	})*/
-	/*---------------------------------------------------- */
-	/* Preloader
 	------------------------------------------------------ */
-	function hidePreloader() {
+	/*function hidePreloader() {
   	var pre = document.getElementById('preloader');
   	if (!pre || pre.dataset.done) return;
   	pre.dataset.done = 'true';
@@ -48,8 +34,18 @@
 
 	// Belt and braces: never trap a visitor, whatever else fails
 	setTimeout(hidePreloader, 1200);
-	window.addEventListener('load', hidePreloader);
+	window.addEventListener('load', hidePreloader);*/
 
+	/*---------------------------------------------------- */
+	/* Fade in page content
+	------------------------------------------------------ */
+	if (document.readyState === 'loading') {
+  		document.addEventListener('DOMContentLoaded', function () {
+    	document.body.classList.add('loaded');
+  		});
+	} else {
+  	document.body.classList.add('loaded');
+	}
 
   	/*---------------------------------------------------- */
   	/* FitText Settings
