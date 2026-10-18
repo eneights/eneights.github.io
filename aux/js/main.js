@@ -10,33 +10,6 @@
 	"use strict";
 
 	/*---------------------------------------------------- */
-	/* Preloader
-	------------------------------------------------------ */
-	/*function hidePreloader() {
-  	var pre = document.getElementById('preloader');
-  	if (!pre || pre.dataset.done) return;
-  	pre.dataset.done = 'true';
-
-  	var loader = document.getElementById('loader');
-  	if (loader) loader.style.display = 'none';
-
-  	pre.style.transition = 'opacity .3s ease';
-  	pre.style.opacity = '0';
-  	setTimeout(function () { pre.style.display = 'none'; }, 320);
-	}
-
-	// Dismiss as soon as the DOM is parsed — no waiting on images or iframes
-	if (document.readyState === 'loading') {
-  	document.addEventListener('DOMContentLoaded', hidePreloader);
-	} else {
-  	hidePreloader();
-	}
-
-	// Belt and braces: never trap a visitor, whatever else fails
-	setTimeout(hidePreloader, 1200);
-	window.addEventListener('load', hidePreloader);*/
-
-	/*---------------------------------------------------- */
 	/* Fade in page content
 	------------------------------------------------------ */
 	if (document.readyState === 'loading') {
@@ -163,12 +136,18 @@
        nav = $('.main-navigation');
 
    // toggle button
-   toggleButton.on('click', function(e) {
+   /*toggleButton.on('click', function(e) {
 
 		e.preventDefault();
 		toggleButton.toggleClass('is-clicked');
 		nav.slideToggle();
 
+	});*/
+
+	$(document).on('click', '.menu-toggle', function(e) {
+   		e.preventDefault();
+   		$(this).toggleClass('is-clicked');
+   		$('.main-navigation').slideToggle();
 	});
 
    // nav items
