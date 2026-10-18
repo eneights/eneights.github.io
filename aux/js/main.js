@@ -132,17 +132,8 @@
 	/*-----------------------------------------------------*/
   	/* Navigation Menu
    ------------------------------------------------------ */  
-   var toggleButton = $('.menu-toggle'),
+   /*var toggleButton = $('.menu-toggle'),
        nav = $('.main-navigation');
-
-   // toggle button
-   /*toggleButton.on('click', function(e) {
-
-		e.preventDefault();
-		toggleButton.toggleClass('is-clicked');
-		nav.slideToggle();
-
-	});*/
 
 	$(document).on('click', '.menu-toggle', function(e) {
    		e.preventDefault();
@@ -158,7 +149,34 @@
    	// fadeout the navigation panel
    	nav.fadeOut();   		
    	     
-  	});
+  	});*/
+
+	/*---------------------------------------------------- */
+	/* Navigation
+	------------------------------------------------------ */
+	function resetNav() {
+	  var nav = document.querySelector('.main-navigation');
+  	  var toggle = document.querySelector('.menu-toggle');
+  	  if (nav) nav.style.display = '';              // clear stale inline display:none
+  	  if (toggle) toggle.classList.remove('is-clicked');
+	}
+
+	document.addEventListener('click', function (e) {
+  		var toggle = e.target.closest('.menu-toggle');
+  		if (!toggle) return;
+
+  		e.preventDefault();
+  		toggle.classList.toggle('is-clicked');
+
+  		var nav = document.querySelector('.main-navigation');
+  		if (nav) {
+    		var hidden = getComputedStyle(nav).display === 'none';
+    		nav.style.display = hidden ? 'flex' : 'none';
+  		}
+	});
+
+// Fires on first load AND on every bfcache restore
+window.addEventListener('pageshow', resetNav);
 
 
    /*---------------------------------------------------- */
