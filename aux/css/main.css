@@ -474,7 +474,7 @@ header {position: fixed; top: 0; left: 0; right: 0; width: 100%; box-sizing: bor
 @media screen and (max-width: 768px) {header .row {box-sizing: border-box; padding-left: 15px; padding-right: 15px} 
 									  header .top-bar {margin-left: 0; padding-left: 0; transform: none}}
 
-footer {padding-bottom: 2rem; font-size: 1.4rem; font-family: "inter-regular", sans-serif; background: #204635}
+footer {padding-top: 1rem; padding-bottom: 1rem; font-size: 1.4rem; font-family: "inter-regular", sans-serif; background: #204635}
 footer .row {max-width: 1300px}
 footer .social {text-align: right}
 footer .footer-social {display: inline-block; font-size: 4rem; margin: 0; padding: 0; position: relative; top: -.3rem}
@@ -482,10 +482,11 @@ footer .footer-social li {display: inline-block; margin: 0 12px; padding: 0}
 footer .footer-social li a {color: #FFFFFF}
 footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
 footer .copyright span {display: inline-block}
-\* footer .copyright span::after {content: "|"; display: inline-block; padding: 0 1rem 0 1.2rem; color: rgba(255, 255, 255, 0.1)} *\
 footer .copyright span:last-child::after {display: none}
+footer .row:last-of-type {display: flex; align-items: center; gap: 1rem}
 
-@media only screen and (max-width: 768px) {footer {text-align: center} footer .social {display: block; width: 100%; text-align: center; margin-bottom: 1.5rem}
+@media only screen and (max-width: 768px) {footer {text-align: center; padding-top: 2rem; padding-bottom: 2rem} 
+										   footer .social {display: block; width: 100%; text-align: center; margin-bottom: 1.5rem}
 										   footer .copyright {text-align: center} footer .copyright span {display: block} footer .copyright span::after {display: none}}
 
 body {opacity: 0; transition: opacity .2s ease}
