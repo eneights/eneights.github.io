@@ -12,7 +12,7 @@
 	/*---------------------------------------------------- */
 	/* Preloader
 	------------------------------------------------------ */ 
-   $(window).load(function() {
+   /*$(window).load(function() {
 
       // will first fade out the loading animation 
     	$("#loader").fadeOut("slow", function(){
@@ -22,7 +22,33 @@
 
       });       
 
-  	})
+  	})*/
+	/*---------------------------------------------------- */
+	/* Preloader
+	------------------------------------------------------ */
+	function hidePreloader() {
+  	var pre = document.getElementById('preloader');
+  	if (!pre || pre.dataset.done) return;
+  	pre.dataset.done = 'true';
+
+  	var loader = document.getElementById('loader');
+  	if (loader) loader.style.display = 'none';
+
+  	pre.style.transition = 'opacity .3s ease';
+  	pre.style.opacity = '0';
+  	setTimeout(function () { pre.style.display = 'none'; }, 320);
+	}
+
+	// Dismiss as soon as the DOM is parsed — no waiting on images or iframes
+	if (document.readyState === 'loading') {
+  	document.addEventListener('DOMContentLoaded', hidePreloader);
+	} else {
+  	hidePreloader();
+	}
+
+	// Belt and braces: never trap a visitor, whatever else fails
+	setTimeout(hidePreloader, 1200);
+	window.addEventListener('load', hidePreloader);
 
 
   	/*---------------------------------------------------- */
