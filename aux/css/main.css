@@ -464,7 +464,7 @@ footer .copyright {font-size: 1.7rem}
 .research-media {display: flex; align-items: flex-start; gap: 4rem}
 .research-text {flex: 1}
 .research-video {flex: 0 0 45%}
-.research-video iframe {width: 100%; height: auto; display: block; padding-left: 40px}
+.research-video iframe {width: 100%; height: auto; aspect-ratio: 1193 / 671; display: block; padding-left: 40px}
 
 @media only screen and (max-width: 768px) {.research-media {flex-direction: column; align-items: center} .research-video {width: 100%; padding-left: 0}
 										   .research-video iframe {padding-left: 0}}
