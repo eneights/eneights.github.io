@@ -368,7 +368,8 @@ footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
 										   .intro-content h1 {font-size: 7.6rem} .intro-social {font-size: 3rem} .intro-social li {margin: 0 15px} 
 										   .intro-info {margin-right: 0; margin-left: 0} #resume .timeline-header {padding-right: 50px} 
 										   #resume .timeline-header h3 {font-size: 1.8rem} #resume .timeline-header p {font-size: 1.4rem} 
-										   #resume .timeline-content {padding-left: 50px} header .row {width: 100%; max-width: none; padding: 18px; margin: 0}}
+										   #resume .timeline-content {padding-left: 50px} header .row {width: 100%; max-width: none; padding: 18px; margin: 0}
+										  header .top-bar {padding-left: 18px; padding-right: 18px}}
 
 @media only screen and (max-width:768px) {html {font-size: 10px} p.lead {font-size: 1.7rem} .bgrid {padding: 0 15px} .section-intro {max-width: 650px} 
 										  .section-intro h1 {font-size: 4rem} #intro {min-height: 660px} 
