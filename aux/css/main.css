@@ -359,7 +359,7 @@ footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
 #intro {height: 100vh; min-height: 720px}
 
 @media screen and (min-width: 1025px) {.row {max-width: 1300px} .section-intro {max-width: 1300px} .intro-content h1 {max-width: 1300px} 
-									   .about-content {max-width: 1300px}}
+									   .about-content {max-width: 1300px}
 									   header .row {width: 100%; max-width: 1300px; box-sizing: border-box; margin: 0 auto; padding-left: 20px; padding-right: 20px; 
 												    min-height: 94px; display: flex; align-items: center}
 									   header .top-bar {position: static; display: flex; align-items: center; gap: 30px; margin-left: 0; padding-left: 0; transform: none}}
@@ -379,7 +379,7 @@ footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
 										  .button-section .button {width: 100%; margin-bottom: 3rem} .button-section [class*="col-"] 
 										  .button:first-child {margin-right: 0} html, body {margin-top: 0} .research-media {flex-direction: column; align-items: center}
 										  .research-video {width: 100%; padding-left: 0} .research-video iframe {padding-left: 0} 
-										  header {text-align: center; top: 0; left: 0; right: 0; margin-top: 0; padding-top: 0; background: #fff} 
+										  header {top: 0; left: 0; right: 0; margin-top: 0; padding-top: 0; background: #fff} 
 										  header .row {width: 100%; max-width: 100%; padding-left: 15px; padding-right: 15px; margin: 0; margin-top: 0; 
 													   box-sizing: border-box; padding: 18px 15px}
 										  header .top-bar {margin-left: 0; margin-right: 0; padding-left: 15px; padding-right: 15px; width: 100%; 
