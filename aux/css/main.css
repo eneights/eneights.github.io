@@ -3,9 +3,10 @@
 @import url("micons/micons.css");
 
 html {font-size: 10px; background: #204635}
-
-html, body {height: 100%}
-body {background: #ffffff; font-family: "inter-regular", sans-serif; font-size: 1.7rem; line-height: 3rem; color: #6e6e6e}
+html, body {height: auto; min-height: 100%}
+body {background: #ffffff; font-family: "inter-regular", sans-serif; font-size: 1.7rem; line-height: 3rem; color: #6e6e6e; opacity: 1; transition: opacity .1s ease; 
+	  min-height: 100vh; display: flex; flex-direction: column}
+body.loaded {opacity: 1}
 
 a {color: #000000; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; 
 			  -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
@@ -16,7 +17,6 @@ h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {font-family: "inter-
 h3, .h03, h4, .h04 {margin-bottom: 0rem}
 h5, .h05, h6, .h06 {font-family: "inter-bold"; margin-bottom: 1.2rem}
 h1, .h01 {font-size: 3.1rem; line-height: 1.355; letter-spacing: -.1rem}
-
 h2, .h02 {font-size: 2.4rem; line-height: 1.25}
 h3, .h03 {font-size: 2.3rem; line-height: 1.5}
 h4, .h04 {font-size: 1.7rem; line-height: 1.765}
@@ -25,33 +25,40 @@ h6, .h06 {font-size: 1.3rem; line-height: 1.846; text-transform: uppercase; lett
 
 p img {margin: 0}
 p.lead {font-family: "inter-regular", sans-serif; font-size: 2rem; line-height: 1.8; color: #888888}
+img.pull-right {margin: .9rem 0 0 2.4rem}
+img.pull-left {margin: .9rem 2.4rem 0 0}
 
 em, i, strong, b {font-size: 1.7rem; line-height: 3rem; font-style: normal; font-weight: normal}
 em, i {font-family: "inter-italic", sans-serif}
-
 strong, b {font-family: "inter-bold", sans-serif}
 
 small {font-size: 1.2rem; line-height: inherit}
-
 abbr {font-family: "inter-bold", sans-serif; font-variant: small-caps; text-transform: lowercase; letter-spacing: .05rem; color: #888888}
-
+del {text-decoration: line-through}
+abbr[title], dfn[title] {border-bottom: 1px dotted; cursor: help}
+mark {background: #ffffff; color: #000}
 var, kbd, samp, code, pre {font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace}
-
 pre {padding: 2.4rem 3rem 3rem; background: #F1F1F1}
-
 code {font-size: 1.4rem; margin: 0 .2rem; padding: .3rem .6rem; white-space: nowrap; background: #F1F1F1; border: 1px solid #E1E1E1; border-radius: 3px}
-
 pre > code {display: block; white-space: pre; line-height: 2; padding: 0; margin: 0}
 pre.prettyprint > code {border: none}
-
-del {text-decoration: line-through}
-
-abbr[title], dfn[title] {border-bottom: 1px dotted; cursor: help}
-
-mark {background: #ffffff; color: #000}
-
 hr {border: solid #d2d2d2; border-width: 1px 0 0; clear: both; margin: 2.4rem 0 1.5rem; height: 0}
-
+table {border-width: 0; width: 100%; max-width: 100%; font-family: "inter-regular", sans-serif}
+.table-responsive {overflow-x: auto; -webkit-overflow-scrolling: touch}
+button, .button {margin-bottom: 1.2}
+fieldset {margin-bottom: 1.5rem; border: none}
+input, textarea, select, pre, figure, table, p, ul, ol, dl, form, .fluid-video-wrapper, .ss-custom-select {margin-bottom: 3rem}
+textarea {min-height: 25rem}
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, 
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, 
+input[type="password"]:focus, textarea:focus, select:focus {color: #FFFFFF; border-bottom: 1px solid #ffffff}
+label, legend {font-family: "inter-bold", sans-serif; font-size: 1.4rem; margin-bottom: .6rem; color: #3b3b3b; display: block}
+input[type="checkbox"], input[type="radio"] {display: inline}
+label > .label-text {display: inline-block; margin-left: 1rem; font-family: "inter-regular", sans-serif; line-height: inherit}
+label > input[type="checkbox"], label > input[type="radio"] {margin: 0; position: relative; top: .15rem}
+select {display: block; height: 6rem; padding: 1.5rem 0; border: 0; outline: none; vertical-align: middle; color: #313131; font-family: "inter-regular", sans-serif;
+		font-size: 1.5rem; line-height: 3rem; max-width: 100%; background: transparent; border-bottom: 1px solid rgba(0, 0, 0, 0.3); -moz-transition: all 0.3s ease-in-out; 
+		-o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
 ol {list-style: decimal}
 ul {list-style: disc}
 li {display: list-item}
@@ -63,31 +70,20 @@ ul.disc li::before {content: ""; display: inline-block; width: 8px; height: 8px;
 					vertical-align: middle}
 dt {margin: 0; color: #ffffff}
 dd {margin: 0 0 0 2rem}
-
-table {border-width: 0; width: 100%; max-width: 100%; font-family: "inter-regular", sans-serif}
-
 th, td {padding: 1.5rem 3rem; text-align: left; border-bottom: 1px solid #E8E8E8}
 th {color: #313131; font-family: "inter-bold", sans-serif}
 td {line-height: 1.5}
 th:first-child, td:first-child {padding-left: 0}
 th:last-child, td:last-child {padding-right: 0}
 
-.table-responsive {overflow-x: auto; -webkit-overflow-scrolling: touch}
-
-button, .button {margin-bottom: 1.2}
-
-fieldset {margin-bottom: 1.5rem}
-
-input, textarea, select, pre, figure, table, p, ul, ol, dl, form, .fluid-video-wrapper, .ss-custom-select {margin-bottom: 3rem}
-
-img.pull-right {margin: .9rem 0 0 2.4rem}
-img.pull-left {margin: .9rem 2.4rem 0 0}
+.colored-link {color: #285943}
+.colored-link:hover {color: #1d4232}
 
 .bgrid {padding: 0 20px}
-
 .pace {-webkit-pointer-events: none; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; user-select: none}
 .pace-inactive {display: none}
 .pace .pace-progress {background: #ffffff; position: fixed; z-index: 900; top: 0; right: 100%; width: 100%; height: 6px}
+.placeholder {color: #a1a1a1 !important}
 
 #preloader {position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #151515; z-index: 800; height: 100%; width: 100%}
 .no-js #preloader, .oldie #preloader {display: none}
@@ -99,13 +95,6 @@ img.pull-left {margin: .9rem 2.4rem 0 0}
 @-webkit-keyframes load {0% {-webkit-transform: rotate(0deg); transform: rotate(0deg)} 100% {-webkit-transform: rotate(360deg); transform: rotate(360deg)}}
 @keyframes load {0% {-webkit-transform: rotate(0deg); transform: rotate(0deg)} 100% {-webkit-transform: rotate(360deg); transform: rotate(360deg)}}
 
-fieldset {border: none}
-
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, 
-select {display: block; height: 6rem; padding: 1.5rem 0; border: 0; outline: none; vertical-align: middle; color: #313131; font-family: "inter-regular", sans-serif;
-		font-size: 1.5rem; line-height: 3rem; max-width: 100%; background: transparent; border-bottom: 1px solid rgba(0, 0, 0, 0.3); -moz-transition: all 0.3s ease-in-out; 
-		-o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
-
 .ss-custom-select {position: relative; padding: 0}
 .ss-custom-select select {-webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; text-indent: 0.01px; 
 						  text-overflow: ''; margin: 0; line-height: 3rem; vertical-align: middle}
@@ -115,21 +104,10 @@ select {display: block; height: 6rem; padding: 1.5rem 0; border: 0; outline: non
 						  height: 20px; line-height: 20px; font-size: 18px; text-align: center; pointer-events: none; color: #252525}
 .oldie .ss-custom-select::after {display: none}
 
-textarea {min-height: 25rem}
-
-input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, 
-input[type="password"]:focus, textarea:focus, select:focus {color: #FFFFFF; border-bottom: 1px solid #ffffff}
-label, legend {font-family: "inter-bold", sans-serif; font-size: 1.4rem; margin-bottom: .6rem; color: #3b3b3b; display: block}
-input[type="checkbox"], input[type="radio"] {display: inline}
-label > .label-text {display: inline-block; margin-left: 1rem; font-family: "inter-regular", sans-serif; line-height: inherit}
-label > input[type="checkbox"], label > input[type="radio"] {margin: 0; position: relative; top: .15rem}
-
 ::-webkit-input-placeholder {color: #a1a1a1}
 :-moz-placeholder {color: #a1a1a1}
 ::-moz-placeholder {color: #a1a1a1}
 :-ms-input-placeholder {color: #a1a1a1}
-
-.placeholder {color: #a1a1a1 !important}
 
 .button, a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {display: inline-block; font-family: "inter-bold", sans-serif; 
 																							font-size: 3rem; text-transform: uppercase; letter-spacing: .3rem; 
@@ -146,7 +124,6 @@ input[type="button"].button-primary {background: #313131; color: #FFFFFF}
 .button.button-primary:hover, a.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, 
 input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, 
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {background: #1f1f1f}
-
 button.full-width, .button.full-width {width: 100%; margin-right: 0}
 button.medium, .button.medium {height: 5.7rem !important; line-height: 5.7rem !important; padding: 0 1.8rem !important}
 button.large, .button.large {height: 6rem !important; line-height: 6rem !important; padding: 0rem 3rem !important}
@@ -183,29 +160,36 @@ button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
 .pull-quote:before {content: "\201C"; top: 33px; left: 0}
 .pull-quote:after {content: '\201D'; bottom: -33px; right: 0}
 
-.grey-section {background: #ebebeb}
-.grey-section p.lead {color: #7d7d7d}
-
-.section-intro {max-width: 900px; margin-left: auto; margin-right: auto; text-align: left; margin-bottom: 1rem; position: relative}
-.section-intro h1 {font-family: "inter-bold", sans-serif; font-size: 3.6rem; color: #313131; line-height: 1.25; margin-bottom: 1.2rem}
-.section-intro h5 {color: #ffffff; font-size: 1.6rem; line-height: 1.875; margin-bottom: 0.3rem; letter-spacing: .4rem}
-
-header {position: fixed; width: 100%; min-height: 50px; z-index: 600; background: #ffffff}
+header {position: fixed; top: 0; left: 0; right: 0; width: 100%; min-height: 50px; z-index: 600; box-sizing: border-box; background: #ffffff}
 header .row {position: relative; min-height: 50px}
 header .top-bar {display: block; background: transparent; min-width: 50px; min-height: 50px; position: absolute; left: 90px; top: 0}
 
+footer {padding-top: 1rem; padding-bottom: 1rem; font-size: 1.4rem; font-family: "inter-regular", sans-serif; background: #204635; margin-top: auto}
+footer a, footer a:visited {color: #FFFFFF}
+footer a:hover, footer a:focus {color: #ffffff}
+footer .row {max-width: 1300px}
+footer .social {text-align: right}
+footer .footer-social {display: inline-block; font-size: 4rem; margin: 0; padding: 0; position: relative; top: -.3rem}
+footer .footer-social li {display: inline-block; margin: 0 12px; padding: 0}
+footer .footer-social li a {color: #FFFFFF}
+footer .copyright span {display: inline-block}
+footer .copyright span:last-child::after {display: none}
+footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
+
 .menu-toggle {display: none}
-
 #main-nav-wrap {display: block; width: auto; font-family: "inter-regular", sans-serif; font-size: 2rem; position: static; margin-top: 30px; background: #ffffff}
-
 .main-navigation {background: transparent; padding: 0; margin: 0; width: auto; height: auto; display: flex; flex-direction: row; align-items: center; 
 				  gap: 30px; list-style: none}
 .main-navigation > li {display: block; height: auto; text-align: left; padding: 0}
 .main-navigation li a {display: block; color: #000000; width: auto; padding: 10px 0; line-height: 16px; border: none}
 .main-navigation li a:hover {color: #285943; padding-left: 0}
 
-.colored-link {color: #285943}
-.colored-link:hover {color: #1d4232}
+.grey-section {background: #ebebeb}
+.grey-section p.lead {color: #7d7d7d}
+
+.section-intro {max-width: 900px; margin-left: auto; margin-right: auto; text-align: left; margin-bottom: 1rem; position: relative}
+.section-intro h1 {font-family: "inter-bold", sans-serif; font-size: 3.6rem; color: #313131; line-height: 1.25; margin-bottom: 1.2rem}
+.section-intro h5 {color: #ffffff; font-size: 1.6rem; line-height: 1.875; margin-bottom: 0.3rem; letter-spacing: .4rem}
 
 #intro {background: #151515 url(../../files/images/intro-bg.jpg) no-repeat center bottom; -webkit-background-size: cover; -moz-background-size: cover;
 		background-size: cover; background-attachment: fixed; width: 100%; height: 100%; min-height: 720px; display: table; position: relative; text-align: center}
@@ -254,7 +238,6 @@ header .top-bar {display: block; background: transparent; min-width: 50px; min-h
 .button-section [class*="col-"] .button:first-child {margin-right: 4rem}
 
 #resume {padding-top: 12rem; padding-bottom: 12rem}
-
 #resume .resume-header {text-align: center}
 #resume .resume-header h2 {color: #ffffff}
 #resume .resume-timeline {max-width: 980px}
@@ -354,19 +337,6 @@ header .top-bar {display: block; background: transparent; min-width: 50px; min-h
 @keyframes sk-bouncedelay {0%, 80%, 100% {-webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0)}
 						   40% {-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1)}}
 
-footer {padding-bottom: 2rem; font-size: 1.4rem; font-family: "inter-regular", sans-serif}
-footer a, footer a:visited {color: #FFFFFF}
-footer a:hover, footer a:focus {color: #ffffff}
-footer .row {max-width: 900px}
-footer .social {text-align: right}
-footer .footer-social {display: inline-block; font-size: 4rem; margin: 0; padding: 0; position: relative; top: -.3rem}
-footer .footer-social li {display: inline-block; margin: 0 12px; padding: 0}
-footer .footer-social li a {color: #FFFFFF}
-footer .copyright span {display: inline-block}
-/* footer .copyright span::after {content: "|"; display: inline-block; padding: 0 1rem 0 1.2rem; color: rgba(255, 255, 255, 0.1)} */
-footer .copyright span:last-child::after {display: none}
-footer .copyright {font-size: 1.7rem}
-
 #go-top {position: fixed; bottom: 0; right: 0; z-index: 600; display: none}
 #go-top a {text-decoration: none; border: 0 none; display: block; height: 6.6rem; width: 6rem; line-height: 6.6rem; text-align: center; background: #FFFFFF; 
 		   color: #FFFFFF; text-align: center; text-transform: uppercase; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; 
@@ -381,29 +351,12 @@ footer .copyright {font-size: 1.7rem}
 .research-video {flex: 0 0 45%; padding-left: 40px}
 .research-video iframe {width: 100%; height: auto; aspect-ratio: 16 / 9; display: block}
 
-header {position: fixed; top: 0; left: 0; right: 0; width: 100%; box-sizing: border-box; background: #fff}
-
 #main-nav-wrap {order: 2}
 .main-navigation {display: flex; flex-direction: row; gap: 30px; list-style: none; margin: 0; padding: 0}
 
 .about-image {width: 40rem; height: auto; border-radius: 100%; float: right; margin: 100px 30px 15px 30px}
 
-html, body {height: auto; min-height: 100%}
-
-body {opacity: 1; transition: opacity .1s ease; min-height: 100vh; display: flex; flex-direction: column}
-body.loaded {opacity: 1}
-
 #intro {height: 100vh; min-height: 720px}
-
-footer {padding-top: 1rem; padding-bottom: 1rem; font-size: 1.4rem; font-family: "inter-regular", sans-serif; background: #204635; margin-top: auto}
-footer .row {max-width: 1300px}
-footer .social {text-align: right}
-footer .footer-social {display: inline-block; font-size: 4rem; margin: 0; padding: 0; position: relative; top: -.3rem}
-footer .footer-social li {display: inline-block; margin: 0 12px; padding: 0}
-footer .footer-social li a {color: #FFFFFF}
-footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
-footer .copyright span {display: inline-block}
-footer .copyright span:last-child::after {display: none}
 
 @media screen and (min-width: 1025px) {.row {max-width: 1300px} .section-intro {max-width: 1300px} .intro-content h1 {max-width: 1300px} 
 									   .about-content {max-width: 1300px}}
@@ -429,7 +382,7 @@ footer .copyright span:last-child::after {display: none}
 										  header {top: 0; left: 0; right: 0; margin-top: 0; padding-top: 0; background: #fff} 
 										  header .row {width: 100%; max-width: 100%; padding-left: 15px; padding-right: 15px; margin: 0; margin-top: 0; 
 													   box-sizing: border-box; padding: 18px 15px}
-										  header .top-bar {margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 15px; width: 100%; 
+										  header .top-bar {margin-left: 0; margin-right: 0; padding-left: 15px; padding-right: 15px; width: 100%; 
 														   box-sizing: border-box; margin: 0; transform: none}
 										  footer {text-align: center; padding-top: 2rem; padding-bottom: 2rem} 
 										  footer .social {display: block; width: 100%; text-align: center; margin-bottom: 1.5rem}
