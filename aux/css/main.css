@@ -369,7 +369,7 @@ footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
 										   .intro-info {margin-right: 0; margin-left: 0} #resume .timeline-header {padding-right: 50px} 
 										   #resume .timeline-header h3 {font-size: 1.8rem} #resume .timeline-header p {font-size: 1.4rem} 
 										   #resume .timeline-content {padding-left: 50px} header .row {width: 100%; max-width: none; padding: 18px; margin: 0}
-										  header .top-bar {padding-left: 18px; padding-right: 18px}}
+										   header .top-bar {position: static; left: auto; padding-left: 18px; padding-right: 18px}}
 
 @media only screen and (max-width:768px) {html {font-size: 10px} p.lead {font-size: 1.7rem} .bgrid {padding: 0 15px} .section-intro {max-width: 650px} 
 										  .section-intro h1 {font-size: 4rem} #intro {min-height: 660px} 
@@ -382,7 +382,8 @@ footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
 										  .research-video {width: 100%; padding-left: 0} .research-video iframe {padding-left: 0} 
 										  header {top: 0; left: 0; right: 0; margin-top: 0; padding-top: 0; background: #fff} 
 										  header .row {width: 100%; max-width: 100%; margin: 0; margin-top: 0; box-sizing: border-box; padding: 18px 30px}
-										  header .top-bar {padding-left: 15px; padding-right: 15px; width: 100%; box-sizing: border-box; margin: 0; transform: none}
+										  header .top-bar {position: static; left: auto; padding-left: 15px; padding-right: 15px; width: 100%; 
+														   box-sizing: border-box; margin: 0; transform: none}
 										  footer {text-align: center; padding-top: 2rem; padding-bottom: 2rem} 
 										  footer .social {display: block; width: 100%; text-align: center; margin-bottom: 1.5rem}
 										  footer .copyright {text-align: center}
@@ -400,12 +401,12 @@ footer .copyright {font-size: 1.8rem; text-align: left; color: #F8F8F5}
 										  .intro-social {font-size: 2.4rem} .intro-info {text-align: justify; margin-top: 3rem} 
 										  .intro-info img {height: 30rem; width: 30rem; float: none; display: inline-block} 
 										  .intro-info .lead {padding-left: 0; text-align: justify} 
-										  header .top-bar {padding-left: 10px; padding-right: 10px} 
+										  header .top-bar {position: static; left: auto; padding-left: 10px; padding-right: 10px} 
 										  header .row {width: 100%; max-width: none; padding: 18px 25px}}
 
 @media only screen and (max-width:400px) {html {font-size: 9.411764705882353px} .bgrid {padding: 0} .section-intro h1 {font-size: 3rem}
 										  #resume .resume-header h2 {font-size: 2.2rem} #resume .timeline-wrap::before {left: 1.8rem} 
 										  #resume .timeline-ico {height: 3.6rem; width: 3.6rem; line-height: 3.6rem; left: 1.8rem; margin-left: -1.8rem; font-size: 1.5rem}
 										  #resume .timeline-header, #resume .timeline-content {padding-left: 5.5rem} 
-										  header .top-bar {padding-left: 0; padding-right: 0}
+										  header .top-bar {position: static; left: auto; padding-left: 0; padding-right: 0}
 										  header .row {width: 100%; max-width: none; padding: 18px 25px}}
