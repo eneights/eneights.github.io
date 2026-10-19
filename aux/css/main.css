@@ -9,7 +9,7 @@ html {font-size: 10px; background: #204635}
 @media only screen and (max-width:400px) {html {font-size: 9.411764705882353px}}
 
 html, body {height: 100%}
-body {background: #204635; font-family: "inter-regular", sans-serif; font-size: 1.7rem; line-height: 3rem; color: #6e6e6e}
+body {background: #ffffff; font-family: "inter-regular", sans-serif; font-size: 1.7rem; line-height: 3rem; color: #6e6e6e}
 
 a {color: #000000; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; 
 			  -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
